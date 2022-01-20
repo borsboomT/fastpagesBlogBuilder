@@ -7,5 +7,28 @@
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#header .logo a {
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(13, 14, 31, 0.7);
+}
+#header .logo a span {
+  color: #2f99c6;
+  text-shadow: 2px 2px 5px rgba(13, 14, 31, 0.7);
+}
+#header .logo img {
+  max-height: 40px;
+}
+
+
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 @import "minima/fastpages-dracula-highlight"; 
+
