@@ -429,13 +429,15 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-#header .logo { font-size: 32px; margin: 0; padding: 0; line-height: 1; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+.site-header { background: rgba(13, 14, 31, 0.8); }
 
-#header .logo a { color: #fff; text-shadow: 2px 2px 5px rgba(13, 14, 31, 0.7); }
+.site-title { font-size: 32px; margin: 0; padding: 0; line-height: 1; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
 
-#header .logo a span { color: #2f99c6; text-shadow: 2px 2px 5px rgba(13, 14, 31, 0.7); }
+.site-title a { color: #fff; text-shadow: 2px 2px 5px rgba(13, 14, 31, 0.7); }
 
-#header .logo img { max-height: 40px; }
+.site-title a span { color: #2f99c6; text-shadow: 2px 2px 5px rgba(13, 14, 31, 0.7); }
+
+.site-title img { max-height: 40px; }
 
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
