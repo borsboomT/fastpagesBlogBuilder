@@ -7,7 +7,7 @@
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 
-#header .logo {
+.site-title {
   font-size: 32px;
   margin: 0;
   padding: 0;
@@ -16,15 +16,15 @@
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-#header .logo a {
+.site-title a {
   color: #fff;
   text-shadow: 2px 2px 5px rgba(13, 14, 31, 0.7);
 }
-#header .logo a span {
+.site-title a span {
   color: #2f99c6;
   text-shadow: 2px 2px 5px rgba(13, 14, 31, 0.7);
 }
-#header .logo img {
+.site-title img {
   max-height: 40px;
 }
 
