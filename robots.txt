@@ -1,1 +1,1 @@
-Sitemap: https://borsboomt.github.io/fastpagesBlogBuilder/sitemap.xml
+Sitemap: https://blog.tbhinnovation.com/sitemap.xml
