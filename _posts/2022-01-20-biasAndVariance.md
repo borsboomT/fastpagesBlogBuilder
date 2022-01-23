@@ -8,7 +8,7 @@ badges: false
 image: images/badMAPE.png
 comments: false
 hide: false
-categories: []
+categories: [Beginner]
 nb_path: _notebooks/2022-01-20-biasAndVariance.ipynb
 layout: notebook
 ---
