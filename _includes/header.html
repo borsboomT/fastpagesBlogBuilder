@@ -1,0 +1,29 @@
+<header id="header">
+<div class="container d-flex align-items-center justify-content-lg-between">
+
+  <h1 class="logo me-auto me-lg-0"><a href="{{ site.baseurl }}/">TBH<span>.</span><span class="blogTitle">blog</span></a></h1>
+
+  <nav id="#navBar" class="navbar order-last order-lg-0">
+	<ul>
+		<li>
+			<a href="{{ site.baseurl }}/">Blog Home</a>
+		</li>
+		{% for page in site.pages %}
+		{% if page.inHeader == true %}  
+		<li>
+			<a href="{{ page.url | relative_url}}">{{ page.title }}</a>
+		</li>
+		{% endif %}
+		{% endfor %}
+	</ul>
+	
+	
+	<i id="#navButton" class="bi bi-list mobile-nav-toggle" onclick="navFunc()"></i>
+	
+  </nav>
+
+  <a href="https://tbhinnovation.com" class="get-started-btn scrollto"><span class="whiteText">My Portfolio<span></a>
+
+</div>
+</header>
+<script src="{{ site.baseurl }}/assets/js/main.js"></script>
