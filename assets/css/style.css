@@ -644,4 +644,9 @@ h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif; }
 
 .post { padding-left: 25px; padding-right: 25px; }
 
+/*--------------------------------------------------------------
+# Search Box
+--------------------------------------------------------------*/
+.search-input { margin-top: 20px; }
+
 /*# sourceMappingURL=style.css.map */
