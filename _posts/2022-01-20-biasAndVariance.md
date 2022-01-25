@@ -4,8 +4,8 @@ description: "The mistakes you're likely to make early in your machine learning 
 title: Beginner Mistakes in Machine Learning
 toc: false
 branch: master
-badges: false 
-image: images/badMAPE.png
+badges: true
+permalink: /beginner-mistakes/
 comments: false
 hide: false
 categories: [Beginner]
@@ -25,6 +25,8 @@ layout: notebook
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
+
+
 <p>So you've decided to pick up machine learning. That's fantastic! It can be incredibly powerful, and open up a ton of opportunities. Before you get started, we should have a little talk about some of the most common mistakes that beginners make when learning machine learning. The biggest culprit of all: overfitting.</p>
 <h2 id="What-is-overfitting?">What is overfitting?<a class="anchor-link" href="#What-is-overfitting?"> </a></h2><p>Using mathematical models to estimate different parameters and properties is nothing new. The concept is basically as old as math itself, and when used correctly it can be incredibly powerful (not to mention <a href="https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century">sexy</a>.😉) That has created a huge influx of people that want to learn how to get into the field of machine learning and become data scientists themselves.</p>
 <p>One of the biggest roadblocks that people tend to run into when they are first learning how to use machine learning models is to make a model as complex as possible, and fit their training data to within an inch of its life. This is called overfitting, and it occurs when a model is fitted so well to a particular subset of data that it doesn't work on any other data at all. There are specific training and testing protocols for avoiding this, such as <a href="https://machinelearningmastery.com/k-fold-cross-validation/">K-Fold Cross Validation</a>, and I will explore how that works in another post. Here we'll focus on how overfitting occurs, and what it has to do with the bias and variance of a model.</p>
@@ -37,7 +39,7 @@ layout: notebook
 <p>That doesn't even begin to cover all the ways that bias can creep into your model, but it gives you an idea as to the kind of things you should be looking out for.</p>
 <p>Variance is sort of the yin to bias' yang. Where the bias of a system is caused by inadvertently fitting the model to unreal circumstances, variance is caused by entirely real fluctuations within a dataset. Our model of choice can end up being fit to the noise in the dataset, resulting in a model that can't really predict anything.</p>
 <p>Bias and variance can both result in a model being a poor predictor, but it is impossible to eliminate either entirely. In fact, variance can be helpful in reducing bias by introducing random variation to the training data. At the same time, bias can be useful in reducing variance because it can enable the model to ignore the noise in the dataset. The relationship between bias and variance is a balancing act, and its important to getting any use out of a machine learning model.</p>
-<h1 id="How-does-model-complexity-tie-in?">How does model complexity tie in?<a class="anchor-link" href="#How-does-model-complexity-tie-in?"> </a></h1><p>The complexity of a model is directly tied to the model bias discussed above, and we can illustrate that here. I'll be using the monthly sunspot dataset from <a href="https://machinelearningmastery.com/backtest-machine-learning-models-time-series-forecasting/">machine learning mastery</a>. Below I import the data, then render a table and plot to show what the data looks like. Note that the dates have been converted to <a href="https://en.wikipedia.org/wiki/Unix_time">Unix epoch time</a> for the sake of simplicity.</p>
+<h1 id="How-does-model-complexity-tie-in?">How does model complexity tie in?<a class="anchor-link" href="#How-does-model-complexity-tie-in?"> </a></h1><p>The complexity of a model is directly tied to the model bias discussed above, and we can illustrate that here. I'll be using the monthly sunspot dataset from <a href="https://github.com/jbrownlee/Datasets">Jason Brownlee's Github</a>. Below I import the data, then render a table and plot to show what the data looks like. Note that the dates have been converted to <a href="https://en.wikipedia.org/wiki/Unix_time">Unix epoch time</a> for the sake of simplicity.</p>
 
 </div>
 </div>
@@ -911,7 +913,7 @@ if (outputEl) {{
 <li>You can see from the comparison of the MAPEs above that adding complexity to the model made things far worse on the unseen data, not better. When adding complexity to a model it is important to do so in a very measured manner. Things like the <a href="https://en.wikipedia.org/wiki/F-test">F-Test</a> or the <a href="https://en.wikipedia.org/wiki/Akaike_information_criterion">Akaike Information Criterion</a> can be used to determine if your added complexity is actually providing a better fit, or if you're just introducing model bias.</li>
 <li>The other points might be sins, but this last one is a cardinal sin. We validated our tests on the exact same data that we used to fit our model, which is the fastest way to introduce bias to your system. In order to avoid this, we need to split the data into training, validation, and testing samples. We iteratively train the model on the training set, and check its performance on the validation set. Then, when we're satisfied with the performance, we test it one last time on the testing set.</li>
 </ol>
-<h1 id="Up-next">Up next<a class="anchor-link" href="#Up-next"> </a></h1><p>In a future post I'll be taking this data set, and creating a model that actually has some predictive power to describe it's behavior. Until next time!</p>
+<h1 id="Up-next">Up next<a class="anchor-link" href="#Up-next"> </a></h1><p>In <a href="{% post_url 2022-01-24-timeSeriesIntroARIMA %}">my next post</a>, I'll be exploring how to use the ARIMA model for time series analysis. Until next time!</p>
 
 </div>
 </div>
