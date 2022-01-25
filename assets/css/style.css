@@ -638,7 +638,7 @@ h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif; }
 /*--------------------------------------------------------------
 # Post Header
 --------------------------------------------------------------*/
-.post-header { margin-top: 30px; }
+.post-header { margin-top: 30px; margin-bottom: -20px; }
 
 #notebook-container { padding: 0; }
 
