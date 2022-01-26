@@ -517,11 +517,7 @@ if (outputEl) {{
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/root/venv/lib/python3.7/site-packages/statsmodels/base/model.py:606: ConvergenceWarning:
-
-Maximum Likelihood optimization failed to converge. Check mle_retvals
-
-                               SARIMAX Results                                
+<pre>                               SARIMAX Results                                
 ==============================================================================
 Dep. Variable:             Passengers   No. Observations:                   95
 Model:                ARIMA(30, 2, 0)   Log Likelihood                -345.376
