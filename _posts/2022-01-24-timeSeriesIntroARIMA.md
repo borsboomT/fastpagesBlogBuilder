@@ -686,7 +686,7 @@ if (outputEl) {{
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This model works fairly well for forecasting the data! You can definitely see that as the forecast gets further from the end of the testing data more error is introduced. We won't quantify that right now, I'll handle that in my next post.</p>
-<h1 id="Up-Next">Up Next<a class="anchor-link" href="#Up-Next"> </a></h1><p>Next time, we'll look at how we might quantify the error in the model forecast and how we can confirm whether or not the parameters we used for this model are actually the best we can do. Until next time!</p>
+<h1 id="Up-Next">Up Next<a class="anchor-link" href="#Up-Next"> </a></h1><p>Next time, we'll look at <a href="{% post_url 2022-02-01-timeSeriesOptimization %}">how we might quantify the error in the model forecast and how we can confirm whether or not the parameters we used for this model are actually the best we can do.</a> Until next time!</p>
 
 </div>
 </div>
